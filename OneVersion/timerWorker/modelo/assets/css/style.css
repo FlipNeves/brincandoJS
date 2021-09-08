@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(75, 17, 102);
+  --primary-color-darker: rgb(33, 9, 56);
+  --iniciou-tempo: rgb(79, 240, 106);
+  --pausou-tempo: rgb(245, 92, 92);
+  --reiniciou-tempo: rgb(81, 205, 243);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+p {
+  margin: 5px;
+}
+button{
+  border-radius: 3px;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  width: 32.5%;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.iniciarTempo{
+  animation: iniciou_cor 10s ease-in-out;
+}
+
+.pausouTempo{
+  animation: pausou_cor 10s ease-in;
+}
+
+.reiniciouTempo{
+  animation: reiniciou_cor 10s ease;
+}
+
+.btnIniciar:hover{
+  background: var(--iniciou-tempo);
+}
+
+.btnPausar:hover{
+  background: var(--pausou-tempo);
+}
+
+.btnReiniciar:hover{
+  background: var(--reiniciou-tempo);
+}
+
+.timerZone{
+  font-size: 3em;
+}
+
+.timerValue{
+  color: black;
+}
+
+
+@keyframes iniciou_cor {
+  from { color: var(--iniciou-tempo) }
+  to   { color: black }
+}
+@keyframes pausou_cor {
+  from { color: var(--pausou-tempo) }
+  to   { color: black }
+}
+@keyframes reiniciou_cor {
+  from { color: var(--reiniciou-tempo) }
+  to   { color: black }
+}

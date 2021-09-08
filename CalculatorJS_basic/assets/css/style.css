@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(75, 17, 102);
+  --primary-color-darker: rgb(33, 9, 56);
+  --primary-color-cleaner: rgb(191, 82, 241);
+  --calculator-btnColor-function: #a1a1a1;
+  --calculator-btnColor-function-darker: #858585;
+  --calculator-btnColor: #dfdfdf;
+  --calculator-btnColor-darker: #bebebe;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculadora{
+  width: 400px;
+}
+
+.display {
+  font-size: 2em;;
+  width: 100%;
+  text-align: right;
+}
+
+.btn{
+  font-size: 1.1em;
+  width: 100%;
+  height: 40px;
+  background: var(--calculator-btnColor);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-num:hover{
+  background: var(--calculator-btnColor-darker);
+}
+
+.btn-function{
+  background: var(--calculator-btnColor-function);
+}
+
+.btn-function:hover{
+  background: var(--calculator-btnColor-function-darker);
+}
+
+.btn-equals{
+  background: #4285f4;
+}
+
